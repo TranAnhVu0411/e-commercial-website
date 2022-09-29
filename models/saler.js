@@ -34,11 +34,11 @@ salerSchema = new Schema({
             min: [100000000, 'Account number is too short'],
             max: 999999999
         },
-        Bank: {
+        bank: {
             type: String,
             required: true
         },
-        Region: {
+        region: {
             type: String,
             required: true
         }

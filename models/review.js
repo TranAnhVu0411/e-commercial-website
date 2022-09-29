@@ -1,10 +1,10 @@
 const mongoose = require('mongoose'),
 {Schema} = mongoose,
 reviewSchema = new Schema({
-    Comment: {
+    comment: {
         type: String,
     },
-    Rating: {
+    rating: {
         type: Number,
         min: 1,
         max: 5,

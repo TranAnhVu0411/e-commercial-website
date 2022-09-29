@@ -1,25 +1,25 @@
 const mongoose = require('mongoose'),
 {Schema} = mongoose,
 itemSchema = new Schema({
-    Name: {
+    name: {
         type: String,
         required: true
     },
-    Description: {
+    description: {
         type: String,
         required: true
     },
-    Tag: [],
-    Images: [],
-    Price: {
+    tag: [],
+    images: [],
+    price: {
         type: Number,
         min: [1, 'price must be larger than 0']
     },
-    Saler: {
+    saler: {
         type: Schema.Types.ObjectId,
         ref: 'Saler'
     },
-    Reviews: [{
+    reviews: [{
         type: Schema.Types.ObjectId,
         ref: 'Review'
     }]

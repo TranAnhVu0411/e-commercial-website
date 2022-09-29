@@ -1,16 +1,17 @@
 const mongoose = require('mongoose'),
+passportLocalMongoose = require('passport-local-mongoose'),
 {Schema} = mongoose,
 userSchema = new Schema({
     userName:{
         type: String
     },
-    Email: {
+    email: {
         type: String,
         required: true,
         lowercase: true,
         unique: true
     },
-    Money: {
+    money: {
         type: Number,
         required: true,
         min: [0, "Money can't be negative"]
@@ -19,12 +20,16 @@ userSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Cart'
     }],
-    Reviews: [{
+    reviews: [{
         type: Schema.Types.ObjectId,
         ref: 'Review'
     }]
 },{
     timestamps: true
+});
+
+userSchema.plugin(passportLocalMongoose, {
+    usernameField: 'email'
 });
 
 module.exports = mongoose.model('User', userSchema);

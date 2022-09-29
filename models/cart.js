@@ -5,7 +5,7 @@ cartSchema = new Schema ({
         type: Schema.Types.ObjectId,
         ref: 'boughtItem'
     }],
-    Status: {
+    status: {
         type: String,
         required: true
     }
