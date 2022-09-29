@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% salers.forEach(saler => { %>
+            <tr>
+                <td><%= saler.name %></td>
+                <td><%= saler.shopAddress %></td>
+              </tr>
+        <% }); %>
+    </tbody>
+  </table>

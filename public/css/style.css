@@ -1,0 +1,8 @@
+div.flash-success{
+    background-color: greenyellow;
+    text-align: center;
+}
+div.flash-error{
+    background-color: red;
+    text-align: center;
+}
