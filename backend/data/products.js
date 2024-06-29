@@ -1,6 +1,5 @@
 const products = [
     {
-      _id: "1",
       name: "Apple AirPods Pro",
       image: "/images/airpods.jpg",
       description: "Apple AirPods Pro are wireless Bluetooth earbuds designed by Apple, featuring active noise cancellation, transparency mode, and a customizable fit for all-day comfort.",
@@ -12,7 +11,6 @@ const products = [
       numReviews: 45
     },
     {
-      _id: "2",
       name: "Amazon Echo Dot (4th Gen)",
       image: "/images/alexa.jpg",
       description: "Amazon Echo Dot is a smart speaker with Alexa, designed to fit perfectly into small spaces. It offers crisp vocals and balanced bass for full sound.",
@@ -24,7 +22,6 @@ const products = [
       numReviews: 30
     },
     {
-      _id: "3",
       name: "Canon EOS Rebel T7 DSLR Camera",
       image: "/images/camera.jpg",
       description: "Canon EOS Rebel T7 is a user-friendly DSLR camera with a 24.1 MP CMOS sensor, built-in Wi-Fi, and Full HD video recording capabilities, perfect for capturing high-quality images and videos.",
@@ -36,7 +33,6 @@ const products = [
       numReviews: 25
     },
     {
-      _id: "4",
       name: "Logitech MX Master 3 Wireless Mouse",
       image: "/images/mouse.jpg",
       description: "Logitech MX Master 3 is an advanced wireless mouse with ultra-fast scrolling, ergonomic design, and customizable buttons, ideal for productivity and precision tasks.",
@@ -48,7 +44,6 @@ const products = [
       numReviews: 40
     },
     {
-      _id: "5",
       name: "Samsung Galaxy S21 Ultra",
       image: "/images/phone.jpg",
       description: "Samsung Galaxy S21 Ultra is a flagship smartphone with a 6.8-inch Dynamic AMOLED display, 108 MP camera, 5G connectivity, and a powerful Exynos 2100 processor.",
@@ -60,7 +55,6 @@ const products = [
       numReviews: 35
     },
     {
-      _id: "6",
       name: "Sony PlayStation 5",
       image: "/images/playstation.jpg",
       description: "Sony PlayStation 5 is a next-generation gaming console with ultra-high-speed SSD, 4K gaming capabilities, and a new DualSense controller for an immersive gaming experience.",
