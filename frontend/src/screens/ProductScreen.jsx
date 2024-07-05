@@ -8,6 +8,7 @@ import { addToCart } from "../slices/cartSlice"
 import Rating from '../components/Rating'
 import Loader from "../components/Loader"
 import Message from "../components/Message"
+import Meta from "../Meta"
 
 const ProductScreen = () => {
     const { id: productId } = useParams();
@@ -52,7 +53,8 @@ const ProductScreen = () => {
                 ) : error ? (
                     <Message variant='danger'>{ error?.data?.message || error.error }</Message>    
                 ) : (
-                    <>
+                            <>
+                                <Meta title={product.name} />
                         <Link className="btn btn-light my-3" to="/">Go Back</Link>
                         <Row>
                             <Col md={5}>
